@@ -30,5 +30,24 @@ int main()
         cout << "Value: " << a[i]
              << " Hash Index: " << index << endl;
     }
+    cout << "\nBasic insertion:\n";
+    for (int i = 0; i < N; i++)
+    {
+        int key = a[i];
+        int index = key % M;
+    
+        if (hashTable[index] == -1)
+        {
+            hashTable[index] = key;
+            cout << key << " inserted at index "
+                 << index << endl;
+        }
+        else
+        {
+            cout << "Collision occurred for "
+                 << key << " at index "
+                 << index << endl;
+        }
+    }
     return 0;
 }
