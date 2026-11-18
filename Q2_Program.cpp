@@ -69,5 +69,23 @@ int main()
         cout << key << " inserted at index "
              << index << endl;
     }
+    cout << "\nFinal Hash Table:\n";
+    cout << "Index\tValue\n";
+    for (int i = 0; i < M; i++)
+    {
+        cout << i << "\t";
+    
+        if (hashTable[i] == -1)
+        {
+            cout << "Empty";
+        }
+        else
+        {
+            cout << hashTable[i];
+        }
+    
+        cout << endl;
+    }
+    cout << "\nProgram executed successfully." << endl;
     return 0;
 }
