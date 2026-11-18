@@ -49,5 +49,25 @@ int main()
                  << index << endl;
         }
     }
+    cout << "\nInsertion using Linear Probing:\n";
+    for (int i = 0; i < N; i++)
+    {
+        int key = a[i];
+        int index = key % M;
+    
+        while (hashTable[index] != -1)
+        {
+            cout << "Collision at index "
+                 << index << " for key "
+                 << key << endl;
+    
+            index = (index + 1) % M;
+        }
+    
+        hashTable[index] = key;
+    
+        cout << key << " inserted at index "
+             << index << endl;
+    }
     return 0;
 }
