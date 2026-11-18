@@ -20,6 +20,15 @@ int main()
     int hashTable[M];
     for (int i = 0; i < M; i++)
         hashTable[i] = -1;
+
+    cout << "\nHash values using Division Method:\n";
+
+    for (int i = 0; i < N; i++)
+    {
+        int index = a[i] % M;
     
+        cout << "Value: " << a[i]
+             << " Hash Index: " << index << endl;
+    }
     return 0;
 }
