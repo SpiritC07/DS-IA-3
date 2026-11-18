@@ -17,6 +17,9 @@ int main()
     int a[N] = {38, 51, 64, 77, 90, 3, 16, 29, 42, 55,
                 68, 81, 94, 7, 20, 33, 46, 59, 72, 85};
 
+    int hashTable[M];
+    for (int i = 0; i < M; i++)
+        hashTable[i] = -1;
     
     return 0;
 }
